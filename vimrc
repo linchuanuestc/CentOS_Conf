@@ -3,7 +3,7 @@
 "noremap <silent> <F9> :NERDTreeTabsToggle<CR>
 "noremap <silent> <F8> :NERDTreeFind<CR>
 "let g:go_version_warning = 0
-map <F2> :NERDTreeToggle<cr>
+map <F1> :NERDTreeToggle<cr>
 
 let g:NERDTreeWinSize = 25 
 let NERDTreeMouseMode=2
