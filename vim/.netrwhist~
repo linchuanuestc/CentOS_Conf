@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/guiyongzhe/a'
-let g:netrw_dirhist_2='/home/guiyongzhe/a/.git'
-let g:netrw_dirhist_3='/home/guiyongzhe/a/.git/branches'
-let g:netrw_dirhist_4='/home/guiyongzhe/a'
-let g:netrw_dirhist_5='/home/lilei/project/cloudsvc/branches/path2name/config/nginx'
-let g:netrw_dirhist_6='/home/lilei/project'
