@@ -1,6 +1,4 @@
-vim and tmux confs
-## 今日任务
 
-- [ ] 完成资源位后台接口wiki
-- [ ] 分配后台开发任务
-- [ ] 确认资源为OKR
+## vim and tmux confs 
+- my vim conf but not with color scheme
+- my tmux conf but need change color scheme
