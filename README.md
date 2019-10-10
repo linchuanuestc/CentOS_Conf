@@ -18,3 +18,5 @@
 用vimrc 覆盖 ~/.vimrc
 tar -C ../  -zvxf vim.tar.gz
 
+安装tmux  sudo sh tmux_install.sh #安装的是tmux2.8,这个版本很稳定
+cp tmux.conf ../.tmux.conf #创建tmux 配置文件
