@@ -10,7 +10,8 @@ ip=`/sbin/ifconfig -a|grep eth0 -A 4 | grep inet|grep -v 127.0.0.1|grep -v inet6
 export LANG=en_US.utf8
 export LC_ALL=en_US.utf8
 export HISTTIMEFORMAT='%F %T '
-export PS1='[\u@\H \w]\$ '
+#export PS1='[\u@\H \w]\$ '
+export PS1='[\u@$ip \w]\$ '
  
 # alias
 alias grep='grep --color'
