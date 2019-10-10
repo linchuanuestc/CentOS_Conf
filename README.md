@@ -1,6 +1,10 @@
 ## vim and tmux confs 
-- my vim conf but not with color scheme
-- my tmux conf but need change color scheme
+- 通过此脚本可以快速布置一个centos环境+vim环境+tmux
+- 按照以下步骤执行即可
+
+## bash 配置文件
+- cp bash_profile ../.bash_profile
+- cp bashrc ../.bashrc
 
 ## centos 环境部署
 下载vim8 https://github.com/vim/vim
@@ -20,3 +24,6 @@ tar -C ../  -zvxf vim.tar.gz
 
 安装tmux  sudo sh tmux_install.sh #安装的是tmux2.8,这个版本很稳定
 cp tmux.conf ../.tmux.conf #创建tmux 配置文件
+
+## TODO
+把以上步骤写成脚本，一键部署
