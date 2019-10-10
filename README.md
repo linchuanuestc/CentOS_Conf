@@ -15,3 +15,6 @@
 - https://github.com/fatih/vim-go
 - 使用package vim8 安装 ,注意GoInstallBinaries
 
+用vimrc 覆盖 ~/.vimrc
+tar -C ../  -zvxf vim.tar.gz
+

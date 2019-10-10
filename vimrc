@@ -8,7 +8,7 @@ map <F1> :NERDTreeToggle<cr>
 let g:NERDTreeWinSize = 25 
 let NERDTreeMouseMode=2
 "let NERDTreeChDirMode=2  "选中root即设置为当前目录
-let NERDTreeQuitOnOpen=0 "打开文件时关闭树
+let NERDTreeQuitOnOpen=1 "打开文件时关闭树
 let NERDTreeShowBookmarks=0 "显示书签
 let NERDTreeMinimalUI=0 "不显示帮助面板
 let NERDTreeDirArrows=1 "目录箭头 1 显示箭头  0传统+-|号
@@ -27,7 +27,7 @@ set ignorecase
 "colorscheme desert
 "colorscheme desert256 
 "colorscheme dracula 
-set background=dark
+"set background=dark
 syntax on
 set shiftwidth=4
 set tabstop=4
@@ -55,13 +55,12 @@ if &diff
     colors pablo 
 endif
 
-call plug#begin()
-Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-Plug 'fatih/molokai'
-call plug#end()
-let g:rehash256 = 1
-let g:molokai_original = 1
-"colorscheme molokai
+" 开启24bit的颜色，开启这个颜色会更漂亮一些
+set termguicolors
+" 配色方案, 可以从上面插件安装中的选择一个使用
+colorscheme molokai " 主题
+set background=dark " 主题背景 dark-深色; light-浅色
+
 
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
@@ -69,4 +68,5 @@ let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
+let g:go_highlight_methods = 1
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
