@@ -16,6 +16,7 @@ export PS1='[\u@$ip \w]\$ '
 # alias
 alias grep='grep --color'
 alias egrep='egrep --color'
+alias gitdiff='git difftool -y --extcmd=vimdiff'
 
 #golang
 export PATH=$PATH:/usr/local/go/bin
