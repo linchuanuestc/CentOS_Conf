@@ -21,6 +21,7 @@ sudo make install
 
 # DOWNLOAD SOURCES FOR TMUX AND MAKE AND INSTALL
 curl -Lk https://github.com/tmux/tmux/releases/download/2.8/tmux-2.8.tar.gz -o ${TMUXSOURCEDIR}
+cd ${TMUXSOURCEDIR}
 tar -xf ${TMUXTAR} 
 cd tmux-2.8
 rm -rf /usr/local/tmux 2>/dev/null
