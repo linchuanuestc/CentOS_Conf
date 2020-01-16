@@ -4,18 +4,26 @@
 sudo yum install gcc kernel-devel make ncurses-devel
 
 # DOWNLOAD SOURCES FOR LIBEVENT AND MAKE AND INSTALL
-curl -LOk https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz
-tar -xf libevent-2.1.8-stable.tar.gz
+
+LIBSOURCEDIR="/tmp/libevent/"
+TMUXSOURCEDIR="/tmp/tmux/"
+LIBEVENTTAR="libevent-2.1.8-stable.tar.gz"
+TMUXTAR="tmux-2.8.tar.gz"
+rm -rf ${LIBSOURCEDIR} ${TMUXSOURCEDIR}
+
+curl -Lk https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz -o ${LIBSOURCEDIR}
+cd ${LIBSOURCEDIR}
+tar -xf ${LIBEVENTTAR} 
 cd libevent-2.1.8-stable
 ./configure --prefix=/usr/local
 make
 sudo make install
 
 # DOWNLOAD SOURCES FOR TMUX AND MAKE AND INSTALL
-
-curl -LOk https://github.com/tmux/tmux/releases/download/2.8/tmux-2.8.tar.gz
-tar -xf tmux-2.8.tar.gz
+curl -Lk https://github.com/tmux/tmux/releases/download/2.8/tmux-2.8.tar.gz -o ${TMUXSOURCEDIR}
+tar -xf ${TMUXTAR} 
 cd tmux-2.8
+rm -rf /usr/local/tmux 2>/dev/null
 mkdir /usr/local/tmux
 LDFLAGS="-L/usr/local/lib -Wl,-rpath=/usr/local/lib" ./configure --prefix=/usr/local/tmux
 make
