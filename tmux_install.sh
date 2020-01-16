@@ -5,8 +5,8 @@ sudo yum install gcc kernel-devel make ncurses-devel
 
 # DOWNLOAD SOURCES FOR LIBEVENT AND MAKE AND INSTALL
 
-LIBSOURCEDIR="/tmp/libevent/"
-TMUXSOURCEDIR="/tmp/tmux/"
+LIBSOURCEDIR="/tmp/libevent"
+TMUXSOURCEDIR="/tmp/tmux"
 LIBEVENTTAR="libevent-2.1.8-stable.tar.gz"
 TMUXTAR="tmux-2.8.tar.gz"
 rm -rf ${LIBSOURCEDIR} ${TMUXSOURCEDIR}
