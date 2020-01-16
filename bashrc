@@ -22,6 +22,9 @@ alias gitdiff='git difftool -y --extcmd=vimdiff'
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/goworkspace
 export PATH=$PATH:$GOPATH/bin
+export GOROOT=/usr/local/go
+export PATH=$GOROOT/bin:$PATH
+export PATH=/home/linchuan/.rpc-tools:$PATH
  
 # history
 HISTFILESIZE=400000000
