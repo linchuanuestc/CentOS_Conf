@@ -4,6 +4,10 @@
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
+
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
  
 # User specific aliases and functions
 ip=`/sbin/ifconfig -a|grep eth0 -A 4 | grep inet|grep -v 127.0.0.1|grep -v inet6|awk '{print $2}'|tr -d "addr:"`
