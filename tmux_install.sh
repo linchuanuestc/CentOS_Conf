@@ -10,6 +10,8 @@ TMUXSOURCEDIR="/tmp/tmux"
 LIBEVENTTAR="libevent-2.1.8-stable.tar.gz"
 TMUXTAR="tmux-2.8.tar.gz"
 rm -rf ${LIBSOURCEDIR} ${TMUXSOURCEDIR}
+mkdir ${LIBSOURCEDIR} 
+mkdir ${TMUXSOURCEDIR}
 
 curl -Lk https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz -o ${LIBSOURCEDIR}/${LIBEVENTTAR}
 cd ${LIBSOURCEDIR}
