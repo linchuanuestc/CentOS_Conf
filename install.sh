@@ -34,6 +34,8 @@ cp -f ${SOURCEDIR}/bashrc ${HOME}/.bashrc
 #install tmux2.8;这个版本很稳定
 sudo sh -x ${SOURCEDIR}/tmux_install.sh #安装的是tmux2.8,这个版本很稳定
 cp -f ${SOURCEDIR}/tmux.conf ${HOME}/.tmux.conf #创建tmux 配置文件
+/usr/local/bin/tmux source-file ${HOME}/.tmux.conf 
+
 
 #cp git-complete
 cp -f ${SOURCEDIR}/git-completion.bash ${HOME}/.git-completion.bash 
