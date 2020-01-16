@@ -11,7 +11,7 @@ LIBEVENTTAR="libevent-2.1.8-stable.tar.gz"
 TMUXTAR="tmux-2.8.tar.gz"
 rm -rf ${LIBSOURCEDIR} ${TMUXSOURCEDIR}
 
-curl -Lk https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz -o ${LIBSOURCEDIR}
+curl -Lk https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz -o ${LIBSOURCEDIR}/${LIBEVENTTAR}
 cd ${LIBSOURCEDIR}
 tar -xf ${LIBEVENTTAR} 
 cd libevent-2.1.8-stable
@@ -20,7 +20,7 @@ make
 sudo make install
 
 # DOWNLOAD SOURCES FOR TMUX AND MAKE AND INSTALL
-curl -Lk https://github.com/tmux/tmux/releases/download/2.8/tmux-2.8.tar.gz -o ${TMUXSOURCEDIR}
+curl -Lk https://github.com/tmux/tmux/releases/download/2.8/tmux-2.8.tar.gz -o ${TMUXSOURCEDIR}/${TMUXTAR}
 cd ${TMUXSOURCEDIR}
 tar -xf ${TMUXTAR} 
 cd tmux-2.8
