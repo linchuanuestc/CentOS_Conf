@@ -36,3 +36,4 @@ sudo make install
 # close your terminal window (flushes cached tmux executable)
 # open new shell and check tmux version
 /usr/local/tmux/bin/tmux -V
+cp -f /usr/local/tmux/bin/tmux /usr/local/bin/tmux 
