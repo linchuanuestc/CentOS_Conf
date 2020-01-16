@@ -32,3 +32,6 @@ HISTSIZE=10000
 PROMPT_COMMAND="history -a"
 export HISTSIZE PROMPT_COMMAND
 shopt -s histappend
+
+#定义path:保证 /usr/local/bin在第一位，因为软件都安装在这里
+export PATH=/usr/local/bin:$PATH
